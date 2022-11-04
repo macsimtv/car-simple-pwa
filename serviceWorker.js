@@ -1,5 +1,12 @@
 const staticDevCar = "car-app-v1";
 
+const assets = [
+  "/",
+  "/index.html",
+  "/css/style.css",
+  "/js/app.js",
+]
+
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
     caches.open(staticDevCar).then(cache => {
